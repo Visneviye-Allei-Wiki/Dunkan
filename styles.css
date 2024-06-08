@@ -1,4 +1,5 @@
 /* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ffc0cb; /* Розовый фон */
@@ -84,6 +85,37 @@ a:hover {
 
 .participants-list li a:hover {
     text-decoration: underline;
+}
+
+/* Инфобокс стили */
+.infobox {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 10px; /* Скругленные углы */
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.infobox img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.infobox table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.infobox th, .infobox td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+}
+
+.infobox th {
+    background-color: #f2f2f2;
 }
 
 /* Анимация для плавного появления элементов снизу вверх */
