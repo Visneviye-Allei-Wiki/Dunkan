@@ -1,12 +1,10 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffc0cb; /* Розовый фон */
+    background-color: #ffc0cb;
     color: #333;
     margin: 0;
     padding: 0;
-    font-size: 18px; /* Увеличенный базовый размер шрифта */
+    font-size: 18px;
 }
 
 .container {
@@ -15,92 +13,71 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 10px; /* Скругленные углы */
+    border-radius: 10px;
     opacity: 0;
     transform: translateY(50px);
-    animation: fadeInUp 1s forwards; /* Анимация при загрузке */
-}
-
-.header, .navigation, .content {
-    margin-bottom: 20px;
+    animation: fadeInUp 1s forwards;
 }
 
 .header {
     text-align: center;
     background-color: #ffb6c1;
     padding: 20px;
-    border-radius: 10px; /* Скругленные углы */
+    border-radius: 10px;
     color: #fff;
     position: relative;
 }
 
-.header p {
-    font-size: 24px; /* Увеличенный размер шрифта */
+.header h1 {
+    font-size: 24px;
     margin: 0;
 }
 
 .header .banner {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Скругленные углы */
+    border-radius: 10px;
     margin-bottom: 20px;
 }
-
 @media (min-width: 768px) {
     .header .banner {
         width: 25%; /* Размер баннера для экранов шире 768px */
     }
 }
 
-h2 {
-    color: #d147a3;
-    font-size: 22px; /* Увеличенный размер шрифта */
+.main-content {
+    display: flex;
+    align-items: flex-start;
 }
 
-a {
-    color: #d147a3;
-    text-decoration: none;
-    font-size: 18px; /* Увеличенный размер шрифта */
+.content {
+    flex: 1;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-.participants-list {
-    list-style: none;
-    padding: 0;
-}
-
-.participants-list li {
-    padding: 10px;
-    border-bottom: 1px solid #ffc0cb;
-    font-size: 18px; /* Увеличенный размер шрифта */
-}
-
-.participants-list li a {
-    color: #d147a3;
-    text-decoration: none;
-}
-
-.participants-list li a:hover {
-    text-decoration: underline;
-}
-
-/* Инфобокс стили */
 .infobox {
-    border: 1px solid #ccc;
+    width: 200px;
     padding: 10px;
-    width: 50px;
-    background-color: #f9f9f9;
-    border-radius: 10px; /* Скругленные углы */
-    float: right;
-    margin: 0 0 20px 20px;
+    background-color: #ffe4e1;
+    border: 1px solid #ffc0cb;
+    border-radius: 10px;
+    margin-left: 20px;
 }
 
-.infobox img {
-    max-width: 100%;
+.infobox h2 {
+    text-align: center;
+    background-color: #ffb6c1;
+    padding: 5px;
     border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.infobox .avatar {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .infobox table {
@@ -108,17 +85,37 @@ a:hover {
     border-collapse: collapse;
 }
 
-.infobox th, .infobox td {
-    border: 1px solid #ccc;
+.infobox td {
     padding: 5px;
-    text-align: left;
+    border-bottom: 1px solid #ffc0cb;
 }
 
-.infobox th {
-    background-color: #f2f2f2;
+.content h2 {
+    color: #d147a3;
+    font-size: 22px;
 }
 
-/* Анимация для плавного появления элементов снизу вверх */
+.content a {
+    color: #d147a3;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ffc0cb;
+    font-size: 18px;
+}
+
 @keyframes fadeInUp {
     to {
         opacity: 1;
