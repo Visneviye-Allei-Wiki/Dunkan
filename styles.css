@@ -232,22 +232,23 @@ input:checked + .slider:before {
 }
 .content-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
 }
 .main-info {
     flex: 1;
-    min-width: 300px;
-    margin-right: 20px;
+    min-width: 0;
 }
 .infobox {
     width: 250px;
     border: 1px solid #d147a3;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 20px;
     transition: border-color 0.3s, background-color 0.3s;
     text-align: center;
+    flex-shrink: 0;
 }
 .infobox h2 {
     margin-top: 0;
@@ -319,24 +320,16 @@ input:checked + .slider:before {
     }
     .infobox {
         width: 100%;
-        margin-top: 20px;
         margin-bottom: 20px; 
+        order: -1;
     }
     .main-info {
-        margin-right: 0;
-        order: 2; 
-    }
-    .infobox {
-        order: 1; 
-    }
-    .infobox {
-        margin-right: 0; 
+        width: 100%;
     }
     .main-info, .infobox {
-        width: 100%; 
         box-sizing: border-box;
     }
     .main-info p, .infobox p, .infobox td {
-        word-break: break-all;
+        word-break: break-word;
     }
 }
