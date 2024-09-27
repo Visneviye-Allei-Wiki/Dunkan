@@ -240,6 +240,7 @@ input:checked + .slider:before {
 .main-info {
     flex: 1;
     min-width: 0;
+    order: 1;
 }
 .infobox {
     width: 250px;
@@ -249,6 +250,7 @@ input:checked + .slider:before {
     transition: border-color 0.3s, background-color 0.3s;
     text-align: center;
     flex-shrink: 0;
+    order: 2;
 }
 .infobox h2 {
     margin-top: 0;
@@ -325,6 +327,7 @@ input:checked + .slider:before {
     }
     .main-info {
         width: 100%;
+        order: 2;
     }
     .main-info, .infobox {
         box-sizing: border-box;
