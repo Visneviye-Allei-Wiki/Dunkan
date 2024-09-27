@@ -374,16 +374,15 @@ input:checked + .slider:before {
         max-width: 50%;
     }
     .content-wrapper {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .infobox {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 0;
         margin-bottom: 20px; 
     }
     .main-info {
         margin-right: 0;
-        order: 2; 
     }
     .infobox {
         order: 1; 
